@@ -1,0 +1,15 @@
+# storing key value pairs:
+"apple" : "red fruit"
+2: "my roll number"
+---
+# lists 
+- apple
+- mango
+- banana
+- Apple
+---
+cities :
+- wekm
+- wekdw
+- wedo
+... #for ending the doc
