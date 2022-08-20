@@ -1,0 +1,96 @@
+#sequence data type:
+cities: [wefwf,efe,efqeq2] #can also be written as:
+---
+Cities: !!seq
+ - efwef
+ - wefwe
+---
+#sparse sequence: when some variable of the sequence is empty
+ sparse sequence:
+  -wfwf
+  -wefwef
+  -wefweefw
+  - 
+  -wefwewefwef   
+---
+#nested sequence:
+
+- 
+ -one
+ -two
+ -three
+-
+ -somthing
+ -somthingmore
+ -somethingonemore
+---
+#for maps, use !!map
+
+
+#nested maps:
+name: Yash
+role:
+ age: 58
+ job: student
+
+#this can also be represented as:
+Name: Yash
+Role: { age: 58, job: student}
+
+
+#note: in older version of YAML, key value pairs could have multiple values,but now its not allowed:
+#pairs example: !!pairs
+# -nickname: Rahul
+# -nickname: Raj
+#the opposite of this is set datatype
+
+
+#Dictionary datatype:
+people: !!omap 
+ - Sahil:
+     name: Sahil P
+     age: 54
+     heigth: 468
+ - Supra: 
+     name: Supra P
+     age: 57
+     heigth: 548
+
+
+#Anchor tags: used for avoiding repetition . example:
+roles: &role
+ role1: student
+ role2: software engineer
+
+ #say 3 people have the same roles as above. so instead of writing the same code again 3 times, we can use " <<: *role "" :
+
+person1:
+ name: yash 
+ <<: *role
+
+person2:
+ name: supra
+ <<: *role
+
+person3:
+ name: sahil 
+ <<: *role
+
+#say sahil has changed his role from software engineer to electronics engineer. we need to update that in code. for that we can do :
+
+#person3:
+# name: sahil
+# <<: *role
+# role2: electronics engineer
+#writing role2 below <<: *role will override the data for role2
+
+
+
+
+   
+
+
+
+
+
+ 
