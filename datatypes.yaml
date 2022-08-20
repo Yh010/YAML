@@ -1,0 +1,59 @@
+
+#string variables :
+name: Yash #here Yash is a variable
+address: "avgfwge"
+gender: 'male'
+
+---
+#write in multiple lines:
+para: |
+ the output
+ will be in
+ multiple lines.
+
+---
+
+#write multiple lines in a sinle line:
+
+input : >
+ this  will
+ be in
+ a single line.
+
+---
+
+#integer data type:
+number : 5461
+---
+
+#float data type:
+percentage : 96.4
+
+---
+
+#boolean :
+booleanValue: No # or you can also write n/N/false/False/FALSE
+#or
+BooleanValue: Yes # or you can also write y/Y/true/True/TRUE
+
+---
+#specifying the data type
+number: !!int 1
+hexa: !!int 0x45
+floatingnumber: !!float 5464.168
+infinity: !!float .inf
+not a number: .nan
+string: !!str this is a string
+something: !!null Null #or null NULL ~
+~: when your key is null
+date: !!timestamp 2022-08-20
+date with time: 2022-08-20T17:13:43.10 +5:30 # 17:13:43.10 is the UTC time by default, hence add 5:30 for IST
+if no time zone: 2022-08-20T17:13:43.10
+exponential number: 54851.648E161
+
+
+
+
+
+
+

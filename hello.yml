@@ -1,0 +1,27 @@
+# storing key value pairs(these are called maps):
+"apple" : "red fruit"
+2: "my roll number"
+---
+# lists 
+- apple
+- mango
+- banana
+- Apple
+---
+cities :
+- wekm
+- wekdw
+- wedo
+... #for ending the doc
+
+
+#for storing lists in a single line:
+cities: [wefwf,efe,efqeq2]
+---
+
+#for key value pairs in a single line:
+
+{apple : "red fruit" , roll number : 58} 
+---
+
+
